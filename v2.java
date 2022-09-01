@@ -48,7 +48,11 @@ public class Dos implements Runnable {
 
 
     public static void main(String[] args) throws Exception {
-        System.out.print("
+        String url = "";
+        int attakingAmoun = 0;
+        Dos dos = new Dos(0, 0);
+        Scanner in = new Scanner(System.in);
+         System.out.print("
   _   _                                _   _                    ____                 _____ _                 
  | \ | |                              | \ | |                  |  _ \               / ____| |                
  |  \| | __ _ _   _ _   _  ___ _ __   |  \| | __ _  ___   ___  | |_) | __ _  ___   | |    | |__   __ _ _   _ 
@@ -58,10 +62,6 @@ public class Dos implements Runnable {
          __/ |       __/ |                    __/ |                                                          
         |___/       |___/                    |___/                                                           
 ");
-        String url = "";
-        int attakingAmoun = 0;
-        Dos dos = new Dos(0, 0);
-        Scanner in = new Scanner(System.in);
         System.out.print("Điền link website cần DDoS: ");
         url = in.nextLine();
         System.out.println("\n");
