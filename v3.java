@@ -49,9 +49,9 @@ public class Dos implements Runnable {
 
     public static void main(String[] args) throws Exception {
      Random randomGenerator = new Random();
-int red = randomGenerator.nextInt(256);
-int green = randomGenerator.nextInt(256);
-int blue = randomGenerator.nextInt(256);
+string red = randomGenerator.nextInt(256);
+string green = randomGenerator.nextInt(256);
+string blue = randomGenerator.nextInt(256);
 
 Color randomColour = new Color(red,green,blue);
       
