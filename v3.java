@@ -48,12 +48,12 @@ public class Dos implements Runnable {
     }
 
     public static void main(String[] args) throws Exception {
-      Random rand = new Random();
-      // Java 'Color' class takes 3 floats, from 0 to 1.
-float r = rand.nextFloat();
-float g = rand.nextFloat();
-float b = rand.nextFloat();
-      Color randomColor = new Color(r, g, b);
+     Random randomGenerator = new Random();
+int red = randomGenerator.nextInt(256);
+int green = randomGenerator.nextInt(256);
+int blue = randomGenerator.nextInt(256);
+
+Color randomColour = new Color(red,green,blue);
       
       
       
@@ -63,7 +63,7 @@ float b = rand.nextFloat();
         int attakingAmoun = 0;
         Dos dos = new Dos(0, 0);
         Scanner in = new Scanner(System.in);
-        System.out.print(randomColor + "Điền link website cần DDoS: ");
+        System.out.print(randomColour + "Điền link website cần DDoS: ");
         url = in.nextLine();
         System.out.println("\n");
         System.out.println("Bắt đầu tấn công vào: " + url);
