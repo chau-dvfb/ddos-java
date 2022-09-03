@@ -57,8 +57,8 @@ public class Dos implements Runnable {
 // 	    float blue = rand.nextFloat();
 // 	    Color randomColor = new Color(red, green, blue);
 	String[] nd = {"\u001B[0m","\u001B[30m","\u001B[32m","\u001B[33m","\u001B[34m","\u001B[35m","\u001B[36m","\u001B[37m","\u001B[31m"};
-	    int rdcolor = rand.Next(0, nd.Length);
-	    string colorrd = nd[rdcolor];
+	    String colorrd = rand[nd];
+
 	    
         String url = "";
         int attakingAmoun = 0;
